@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      body { font-family: Arial; width: 320px; padding: 12px; }
+      input[type="text"]{ width:100%; box-sizing:border-box; margin-bottom:8px; padding:6px; }
+      button{ padding:8px 12px; }
+      label{ font-size:12px; color:#333;}
+      .small { font-size:12px; color:#666; margin-top:6px; }
+    </style>
+  </head>
+  <body>
+    <label>Server URL (ws:// or wss://)</label>
+    <input id="server" type="text" placeholder="ws://localhost:3000" />
+    <label>Room ID</label>
+    <input id="room" type="text" placeholder="room1" />
+    <label>Room key (optional)</label>
+    <input id="roomKey" type="text" placeholder="optional secret" />
+    <button id="connect">Connect</button>
+    <div id="status" style="margin-top:8px;font-size:13px;color:#666"></div>
+    <div class="small">Make sure every participant installs the extension and joins the same room.</div>
+    <script src="popup.js"></script>
+  </body>
+</html>
